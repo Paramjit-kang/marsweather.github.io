@@ -92,9 +92,9 @@ function getWeather() {
           sol: sol,
           maxTemp: data.AT.mx,
           minTemp: data.AT.mn,
-          windSpeed: data.HWS.av,
-          windDirectionDegrees: data.WD.most_common.compass_degrees,
-          windDirectionCardinal: data.WD.most_common.compass_point,
+          windSpeed: data.HWS?.av,
+          windDirectionDegrees: data.WD.most_common?.compass_degrees,
+          windDirectionCardinal: data.WD.most_common?.compass_point,
           date: new Date(data.First_UTC),
         };
       });
